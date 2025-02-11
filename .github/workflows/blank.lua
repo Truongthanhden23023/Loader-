@@ -235,29 +235,3 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-projectCMDB
    end,
 })
 
-local Label = Tabcre:CreateLabel("Credits for you")
-
-local Button = TabMisc:CreateButton({
-   Name = "Unload",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-Rayfield:Destroy()
- end,
-})
-
-Rayfield:LoadConfiguration()
-Rayfield:Notify({
-   Title = "NowX Store",
-   Content = "Notification Content",
-   Duration = 6.5,
-   Image = 4483362458,
-   Actions = {
-       Ignone = {
-           Name = "Okay!",
-           Callback = function()
-                 print("The user tapped Okay!")
-           end
-        },    
-
-},
-})
